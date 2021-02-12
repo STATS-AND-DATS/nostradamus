@@ -9,9 +9,6 @@
 
 
 best_predictor <- function(dataframe, response) {
-  if (sum(sapply(dataframe, function(x) {is.numeric(x) | is.factor(x)})) < ncol(dataframe)) {
-    stop("Make sure that all variables are of class numeric/factor!")
-  }
 
   # pre-allocate vectors
   varname <- c()
